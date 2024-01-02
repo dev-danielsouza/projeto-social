@@ -7,18 +7,16 @@
 }
 
 html, body {
-  height: 100vh;
-  width: 100vh;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #000;
 }
 
 body {
+  position: relative;
   background-image: url(../imagens/fundo-madeira.jpg);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 main {
@@ -44,3 +42,28 @@ main {
   width: 269px;
   height: 471px;
 }
+
+.social-medias {
+  text-align: right;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.social-medias-logo {
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.400);
+}
+
+.social-medias-logo:hover {
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.600);
+  transition: transform .3s;
+}
+
